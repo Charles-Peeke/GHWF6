@@ -20,3 +20,8 @@ def test_two_grades():
 def test_one_grade_one_dropped():
     grades = [12]
     assert compute_hw_average(grades, 1) == 0
+
+
+def test_two_grades_one_dropped():
+    grades = [1, 2]
+    assert compute_hw_average(grades, 1) == 2
